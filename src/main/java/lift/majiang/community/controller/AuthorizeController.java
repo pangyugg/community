@@ -69,7 +69,6 @@ public class AuthorizeController {
                 userMapper.insert(user);
                 request.getSession().setAttribute("user",gitHubUser);
                 response.addCookie(new Cookie("token",user.getToken()));
-
                 return "redirect:/";//重定向
             }else {
                 //登录失败！
