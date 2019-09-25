@@ -8,6 +8,15 @@ public class GitHubUser {
     public String getName() {
         return name;
     }
+    //alt insert 快捷键，可以快速生成set和get方法。
+    @Override
+    public String toString() {
+        return "GitHubUser{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", bio='" + bio + '\'' +
+                '}';
+    }
 
     public void setName(String name) {
         this.name = name;
